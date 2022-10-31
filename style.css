@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navbar{
+    background-color: rgb(70, 70, 70);
+    padding: 0.3125rem;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0px;
+
+}
+
+.nav-item{
+    padding: 0 0.3125rem;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+/* Banner */
+#banner{
+    display: grid;
+    place-content: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0.5rem;
+    background-color: rgb(240, 255, 250);
+}
+
+#citySelector{
+    grid-column: auto;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#citySelector div{
+    width: auto;
+    margin: auto;
+    align-self: center;
+}
+
+#weatherInfo{
+    grid-column: auto;
+    padding: 0.5rem;
+    width: auto;
+    margin-left: 0;
+}
+/* City Selector */
+select{
+    padding: 0.3125rem;
+}
+
+#weatherList{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0.5rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+#weatherList li{
+    grid-column: auto;
+    padding: 0.3125rem;
+    margin-right: 0.3125rem;
+}
+
+/*Media Querries*/
+@media screen and (max-width: 700px) and (min-width: 350px){
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    #weatherInfo{
+        grid-column: auto;
+        padding: 0.5rem;
+        width: max-content;
+        margin: auto;
+    }
+}

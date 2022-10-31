@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        <nav id="navbar">
+            <ul>
+                <li class="nav-item"><a href="/index.html">Weather</a></li>
+                <li class="nav-item"><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <section id="banner">
+            <div>
+                <h1>Weather App</h1>
+            </div>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section id="citySelector">
+            <div>
+                <p>Please select your city.</p>
+                <select id="Selector" name="citySelector">
+                    <option value="ludhiana">Ludhiana</option>
+                    <option value="chandigarh">Chandigarh</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="weatherInfo">
+            <div>
+                <h2 id="city_name">City: Name</h2>
+                <ul id="weatherList">
+                    <li id="weather">Weather:</li>
+                    <li id="description">Description:</li>
+                    <li id="current_temp">Current Temp:</li>
+                    <li id="feels_like">Feels Like:</li>
+                    <li id="max_temp">Max Temp:</li>
+                    <li id="min_temp">Min Temp:</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="/index.js"></script>
+</body>
+</html>
